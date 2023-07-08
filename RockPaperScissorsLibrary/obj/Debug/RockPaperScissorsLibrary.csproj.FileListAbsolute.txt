@@ -1,0 +1,6 @@
+C:\Users\marco\Source\repos\RockPaperScissorsGame\RockPaperScissorsLibrary\bin\Debug\RockPaperScissorsLibrary.dll
+C:\Users\marco\Source\repos\RockPaperScissorsGame\RockPaperScissorsLibrary\bin\Debug\RockPaperScissorsLibrary.pdb
+C:\Users\marco\Source\repos\RockPaperScissorsGame\RockPaperScissorsLibrary\obj\Debug\RockPaperScissorsLibrary.csproj.AssemblyReference.cache
+C:\Users\marco\Source\repos\RockPaperScissorsGame\RockPaperScissorsLibrary\obj\Debug\RockPaperScissorsLibrary.csproj.CoreCompileInputs.cache
+C:\Users\marco\Source\repos\RockPaperScissorsGame\RockPaperScissorsLibrary\obj\Debug\RockPaperScissorsLibrary.dll
+C:\Users\marco\Source\repos\RockPaperScissorsGame\RockPaperScissorsLibrary\obj\Debug\RockPaperScissorsLibrary.pdb
