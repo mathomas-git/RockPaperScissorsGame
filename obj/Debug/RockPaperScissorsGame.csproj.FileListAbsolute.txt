@@ -1,0 +1,11 @@
+C:\Users\marco\Source\repos\RockPaperScissorsGame\RockPaperScissorsGame\bin\Debug\RockPaperScissorsGame.exe.config
+C:\Users\marco\Source\repos\RockPaperScissorsGame\RockPaperScissorsGame\bin\Debug\RockPaperScissorsGame.exe
+C:\Users\marco\Source\repos\RockPaperScissorsGame\RockPaperScissorsGame\bin\Debug\RockPaperScissorsGame.pdb
+C:\Users\marco\Source\repos\RockPaperScissorsGame\RockPaperScissorsGame\bin\Debug\RockPaperScissorsLibrary.dll
+C:\Users\marco\Source\repos\RockPaperScissorsGame\RockPaperScissorsGame\bin\Debug\RockPaperScissorsLibrary.pdb
+C:\Users\marco\Source\repos\RockPaperScissorsGame\RockPaperScissorsGame\obj\Debug\RockPaperScissorsGame.csproj.AssemblyReference.cache
+C:\Users\marco\Source\repos\RockPaperScissorsGame\RockPaperScissorsGame\obj\Debug\RockPaperScissorsGame.csproj.SuggestedBindingRedirects.cache
+C:\Users\marco\Source\repos\RockPaperScissorsGame\RockPaperScissorsGame\obj\Debug\RockPaperScissorsGame.csproj.CoreCompileInputs.cache
+C:\Users\marco\Source\repos\RockPaperScissorsGame\RockPaperScissorsGame\obj\Debug\RockPaperScissorsGame.csproj.CopyComplete
+C:\Users\marco\Source\repos\RockPaperScissorsGame\RockPaperScissorsGame\obj\Debug\RockPaperScissorsGame.exe
+C:\Users\marco\Source\repos\RockPaperScissorsGame\RockPaperScissorsGame\obj\Debug\RockPaperScissorsGame.pdb
