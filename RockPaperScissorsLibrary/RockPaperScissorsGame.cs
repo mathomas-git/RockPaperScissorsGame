@@ -80,8 +80,7 @@ namespace RockPaperScissorsLibrary
                         Console.WriteLine($"{player1.Name} :" + player1Score);
                         Console.WriteLine($"{player2.Name} :" + player2Score);
                         Console.WriteLine("=================================");
-                    } 
-                    
+                    }   
                 }
                 else
                 {
@@ -104,9 +103,7 @@ namespace RockPaperScissorsLibrary
                         Console.WriteLine($"{player2.Name} :" + player2Score);
                         Console.WriteLine("=================================");
                     }
-                    
                 }
-
             }
 
             if (language == "en")
@@ -144,7 +141,5 @@ namespace RockPaperScissorsLibrary
         {
             Console.WriteLine("");
         }
-
     }
-
 }
