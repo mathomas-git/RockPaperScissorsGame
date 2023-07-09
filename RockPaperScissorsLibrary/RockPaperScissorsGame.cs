@@ -29,17 +29,15 @@ namespace RockPaperScissorsLibrary
 
         public void PlayGame(string language)
         {
-            Console.WriteLine();
+            AddLine();
             while (player1Score < roundsToWin && player2Score < roundsToWin)
             {
                 Option player1Option = player1.GetOption(previousOptionList, language);
                 Option player2Option = player2.GetOption(previousOptionList, language);
-
-                Console.WriteLine();
-                
+                AddLine();
                 Console.WriteLine($"{player1.Name}: {player1Option}");
                 Console.WriteLine($"{player2.Name}: {player2Option}");
-                Console.WriteLine();
+                AddLine();
 
                 previousOptionList.Add(player1Option);
                 previousOptionList.Add(player2Option);
@@ -48,11 +46,15 @@ namespace RockPaperScissorsLibrary
                 {
                     if (language == "en")
                     {
+                        Console.WriteLine("=================================");
                         Console.WriteLine("It's a tie! Let's play another round.");
+                        Console.WriteLine("=================================");
                     }
                     else
                     {
+                        Console.WriteLine("=================================");
                         Console.WriteLine("Il y a égalité ! Jouons un autre tour.");
+                        Console.WriteLine("=================================");
                     }
                 }
                 else if ((player1Option == Option.Rock && player2Option == Option.Scissors) ||
@@ -60,48 +62,89 @@ namespace RockPaperScissorsLibrary
                          (player1Option == Option.Scissors && player2Option == Option.Paper) ||
                          (player1Option == Option.Flamethrower && player2Option == Option.Paper))
                 {
+                    player1Score++;
                     if (language == "en")
                     {
-                        Console.WriteLine($"{player1.Name} wins this round!");
+                        Console.WriteLine("=================================");
+                        Console.WriteLine($"{player1.Name} wins this round.");
+                        Console.WriteLine("Game Score:");
+                        Console.WriteLine($"{player1.Name} :" + player1Score);
+                        Console.WriteLine($"{player2.Name} :" + player2Score);
+                        Console.WriteLine("=================================");
                     }
                     else
                     {
-                        Console.WriteLine($"{player1.Name} gagne ce tour.");
-                    }
+                        Console.WriteLine("=================================");
+                        Console.WriteLine($"{player1.Name} gagne ce tour." );
+                        Console.WriteLine("Score de Jeux:");
+                        Console.WriteLine($"{player1.Name} :" + player1Score);
+                        Console.WriteLine($"{player2.Name} :" + player2Score);
+                        Console.WriteLine("=================================");
+                    } 
                     
-                    player1Score++;
                 }
                 else
                 {
+                    player2Score++;
                     if (language == "en")
                     {
-                        Console.WriteLine($"{player2.Name} wins this round!");
+                        Console.WriteLine("=================================");
+                        Console.WriteLine($"{player2.Name} wins this round.");
+                        Console.WriteLine("Game Score:");
+                        Console.WriteLine($"{player1.Name} :" + player1Score);
+                        Console.WriteLine($"{player2.Name} :" + player2Score);
+                        Console.WriteLine("=================================");
                     }
                     else
                     {
-                        Console.WriteLine($"{player2.Name} gagne ce tour.");
+                        Console.WriteLine("=================================");
+                        Console.WriteLine($"{player2.Name} gagne ce tour." );
+                        Console.WriteLine("Score de Jeux:");
+                        Console.WriteLine($"{player1.Name} :" + player1Score);
+                        Console.WriteLine($"{player2.Name} :" + player2Score);
+                        Console.WriteLine("=================================");
                     }
-                    player2Score++;
+                    
                 }
 
-                Console.WriteLine();
             }
 
             if (language == "en")
             {
+                Console.WriteLine("=================================");
+                Console.WriteLine("GAME OVER!!!");
                 Console.WriteLine($"{(player1Score == roundsToWin ? player1.Name : player2.Name)} wins the game!");
+                Console.WriteLine("=================================");
             }
             else
             {
+                Console.WriteLine("=================================");
+                Console.WriteLine("FIN DU JEU!!!");
                 Console.WriteLine($"{(player1Score == roundsToWin ? player1.Name : player2.Name)} gagne le jeux!");
+                Console.WriteLine("=================================");
             }
         }
 
         public void StopGame(string language)
         {
+            if (language == "en")
+            {
+                AddLine();
+                Console.WriteLine("Press Enter to quit the Game!");
+            }
+            else
+            {
+                AddLine();
+                Console.WriteLine("Presser la touche Enter pour sortir du Jeux");
+            }
             Console.ReadLine();
         }
 
-     }
+        private void AddLine()
+        {
+            Console.WriteLine("");
+        }
+
+    }
 
 }

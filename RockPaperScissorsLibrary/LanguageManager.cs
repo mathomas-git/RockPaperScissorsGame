@@ -28,26 +28,40 @@ namespace RockPaperScissorsLibrary
             }
         }
 
+        public string GetPlayModeTitle()
+        {
+            switch (currentLanguage)
+            {
+                case "en":
+                    return "Please Enter: \n 1- To play with two players\n 2- To play with the Computer";
+                case "fr":
+                    return "SVP Entrer\n 1- Pour jouer avec 2 Joeurs\n 2- Pour jouer avec l'Ordinateur";
+                default:
+                    return "Unsupported.";
+            }
+        }
+
         public string GetPlayModeDescription()
         {
             switch (currentLanguage)
             {
                 case "en":
-                    return "Please Enter 1 to play with two players\nEnter 2 to play with the Computer";
+                    return "Select Game Mode:\n 1- To play with two players\n 2- To play with the Computer";
                 case "fr":
-                    return "SVP Entrer 1 pour jouer avec 2 Joeurs\nEntrer 2 pour jouer avec le Computer";
+                    return "Choisir Mode de Jeu:\n 1- Pour jouer avec 2 Joeurs\n 2- Pour jouer avec l'Ordinateur";
                 default:
                     return "Unsupported.";
             }
         }
+
         public string EnterPlayer1Name()
         {
             switch (currentLanguage)
             {
                 case "en":
-                    return "Please enter the name for player No 1: ";
+                    return "Please enter the name for PLAYER No 1: ";
                 case "fr":
-                    return "SVP entrer le nom du joueur No 1: ";
+                    return "SVP entrer le nom du JOUEUR No 1: ";
                 default:
                     return "Unsupported.";
             }
@@ -57,9 +71,9 @@ namespace RockPaperScissorsLibrary
             switch (currentLanguage)
             {
                 case "en":
-                    return "Please enter the name for player No 2: ";
+                    return "Please enter the name for PLAYER No 2: ";
                 case "fr":
-                    return "SVP entrer le nom du joueur No 2: ";
+                    return "SVP entrer le nom du JOUEUR No 2: ";
                 default:
                     return "Unsupported.";
             }

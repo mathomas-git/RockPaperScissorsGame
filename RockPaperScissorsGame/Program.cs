@@ -14,31 +14,46 @@ namespace Game
         {
             int roundsToWin = 3;
             LanguageManager languageManager = new LanguageManager();
-            string langage = "en";
+            string language = "en";
 
             string input = GetLanguage();
 
             if (input == "1")
             {
                 languageManager.SetLanguage("en");
-                langage = "en";
+                language = "en";
             }
             else if (input == "2")
             {
                 languageManager.SetLanguage("fr");
-                langage = "fr";
+                language = "fr";
             }
       
             string greeting = languageManager.GetGreeting();
             Console.WriteLine(greeting);
-            Console.WriteLine("Language: "+langage.ToUpper());
+            Console.WriteLine("Language: "+language.ToUpper());
             AddLine();
             Console.WriteLine(languageManager.GetPlayModeDescription());
             int playMode = Convert.ToInt32(ChoiceValidation());
-            if (playMode == 1) 
-                Console.WriteLine("Game Mode : 2 PLAYERS");
+            if (playMode == 1)
+                if (language == "en")
+                {
+                    Console.WriteLine("Game Mode Chose: 2 PLAYERS");
+                }
+                else
+                {
+                    Console.WriteLine("Mode de Jeux Choisi: 2 Joeurs"); 
+                }
             else
-                Console.WriteLine("Game Mode : WITH COMPUTER");
+                 if (language == "en")
+                {
+                    Console.WriteLine("Game Mode Chose : WITH COMPUTER");
+                }
+                else
+                {
+                    Console.WriteLine("Mode de Jeux Choisi : AVEC ORDINATEUR");
+                }
+           
             Console.Write(languageManager.EnterPlayer1Name());
             string player1Name = Console.ReadLine();
             Player player1 = new Player(PlayerType.Human, player1Name);
@@ -60,9 +75,9 @@ namespace Game
             //Create a new instance of RockPaperScissorsGame
             RockPaperScissorsGame game = new RockPaperScissorsGame(player1, player2, roundsToWin);
             //Start the Game
-            game.PlayGame(langage);
+            game.PlayGame(language);
             //Stop the Game
-            game.StopGame(langage);
+            game.StopGame(language);
 
         }
         static string GetLanguage()

@@ -8,9 +8,9 @@ namespace RockPaperScissorsLibrary.Enumeration
 {
     public enum Option
     {
-        Rock            = 1,
-        Paper           = 2,
-        Scissors        = 3,
-        Flamethrower    = 4
+        Rock            = 0,
+        Paper           = 1,
+        Scissors        = 2,
+        Flamethrower    = 3
     }
 }
